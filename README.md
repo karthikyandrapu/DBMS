@@ -61,11 +61,39 @@ select deptid from dept
 INTERSECT
 select deptid from emp;
 
-
-
-
 select * from dept;
 select * from emp;
 
 drop table dept;
 drop table emp;
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+create table emp(   
+  empid    number(20),   
+  ename    varchar2(10),   
+  sal      number(7,2),   
+  deptid   number(20)
+);
+insert into emp(empid,ename,sal,deptid) values(901,'ARUN',70000,'01');
+insert into emp(empid,ename,sal,deptid) values(902,'KARTHIK',50000,'01');
+insert into emp(empid,ename,sal,deptid) values(903,'KOTESH',60000,'01');
+insert into emp(empid,ename,sal,deptid) values(904,'VARUN',30000,'02');
+insert into emp(empid,ename,sal,deptid) values(905,'TARUN',30000,'03');
+insert into emp(empid,ename,sal,deptid) values(906,'HARUN',60000,'03');
+insert into emp(empid,ename,sal,deptid) values(907,'KARUN',50000,'04');
+insert into emp(empid,ename,sal,deptid) values(908,'FARUN',70000,'04');
+insert into emp(empid,ename,sal,deptid) values(909,'BARUN',20000,'05');
+insert into emp(empid,ename,sal,deptid) values(910,'DARUN',25000,'05');
+
+select max(sal) from emp;
+select min(sal) from emp;
+select count(sal) from emp;
+select avg(sal) from emp;
+select sum(sal) from emp;
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
